@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appl Support Service</title>
+  <style>
+    /* Your existing CSS styles */
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>24/7 Support Service</h1>
+  </header>
+
+  <img id="support-image" height="150" width="150" src="https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaCPWWob9-FBShiD6qryqj2ohwA9ZGjW-QSPw5LaAvu8TzWwa-miqJ-IWQ51izNQT1ljh-7tAitGnaaCRd1weI0oufY04A=w1366-h643" alt="Support Image">
+
+  <div id="content">
+    <p>
+      Welcome to our support service. We are here to assist you 24/7 with any questions or issues you may have.
+    </p>
+    <p>
+      Our dedicated team is committed to providing you with the best support experience. Feel free to reach out to us anytime.
+    </p>
+    <p>Waiting Times 1 min....</p>
+    <a href="javascript:void(0);" onclick="checkHuman()" class="button">Call Now</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Appl Support Service. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function checkHuman() {
+      // You can customize this challenge as needed
+      var challenge = prompt("To ensure you are not a bot, please enter the result of 2 + 2:", "");
+
+      if (challenge === "4") {
+        // If the challenge is passed, proceed with the action (e.g., making a call)
+        window.location.href = "tel:+17132341499";
+      } else {
+        alert("Sorry, you failed the bot check. Please try again.");
+      }
+    }
+  </script>
+
+</body>
+</html>
