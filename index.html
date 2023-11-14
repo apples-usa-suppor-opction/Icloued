@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow"> <!-- Add noindex meta tag for search engines -->
   <title>Appl Support Service</title>
   <style>
-    /* Your existing CSS styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #000000;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    #support-image {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    #content {
+      padding: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #000000;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background-color: #27ae60;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -23,8 +77,8 @@
     <p>
       Our dedicated team is committed to providing you with the best support experience. Feel free to reach out to us anytime.
     </p>
-    <p>Waiting Times 1 min....</p>
-    <a href="javascript:void(0);" onclick="checkHuman()" class="button">Call Now</a>
+    <mark>Wating Times 1 min....</mark>
+    <a href="tel:+17132341499" class="button" target="_blank">Call Now</a>
   </div>
 
   <footer>
@@ -32,18 +86,10 @@
   </footer>
 
   <script>
-    function checkHuman() {
-      // You can customize this challenge as needed
-      var challenge = prompt("To ensure you are not a bot, please enter the result of 2 + 2:", "");
-
-      if (challenge === "4") {
-        // If the challenge is passed, proceed with the action (e.g., making a call)
-        window.location.href = "tel:+17132341499";
-      } else {
-        alert("Sorry, you failed the bot check. Please try again.");
-      }
-    }
+    // You can add JavaScript functionality here if needed
+    // Add bot blocking logic if required
   </script>
 
 </body>
+
 </html>
